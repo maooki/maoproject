@@ -58,11 +58,10 @@ public/projects/      # mockup SVG pratinjau proyek
 
 ## Deploy
 
-Produksi berjalan di Vercel (proyek `maokii`): [maokii.vercel.app](https://maokii.vercel.app).
+Produksi berjalan di Vercel: [maokii.vercel.app](https://maokii.vercel.app) (proyek `maokii`).
 
-```bash
-vercel deploy --prod
-```
+- Push ke branch `main` → otomatis dideploy (integrasi GitHub aktif).
+- Deploy manual: `vercel deploy --prod`.
 
 ## Teknologi
 
