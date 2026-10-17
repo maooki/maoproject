@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="gf-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#18124C" />
+      <stop offset="1" stop-color="#0B0726" />
+    </linearGradient>
+    <radialGradient id="gf-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#38B6FF" stop-opacity="0.16" />
+      <stop offset="1" stop-color="#38B6FF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#gf-bg)" />
+
+  <!-- arena -->
+  <ellipse cx="400" cy="420" rx="360" ry="120" fill="url(#gf-glow)" />
+  <g stroke="#ffffff" stroke-opacity="0.06">
+    <path d="M40 380H760" />
+    <path d="M20 415H780" />
+    <path d="M0 460H800" />
+    <path d="M290 340 120 500" />
+    <path d="M510 340 680 500" />
+    <path d="M400 336 400 500" />
+  </g>
+
+  <!-- HUD atas -->
+  <circle cx="56" cy="60" r="20" fill="#261E6E" stroke="#ffffff" stroke-opacity="0.14" />
+  <text x="56" y="64" text-anchor="middle" font-size="11" font-weight="700" fill="#A39EC4">P1</text>
+  <rect x="86" y="49" width="240" height="22" rx="11" fill="#ffffff" opacity="0.08" />
+  <rect x="86" y="49" width="182" height="22" rx="11" fill="#C5E8B7" />
+
+  <rect x="474" y="49" width="240" height="22" rx="11" fill="#ffffff" opacity="0.08" />
+  <rect x="532" y="49" width="182" height="22" rx="11" fill="#38B6FF" />
+  <circle cx="744" cy="60" r="20" fill="#261E6E" stroke="#ffffff" stroke-opacity="0.14" />
+  <text x="744" y="64" text-anchor="middle" font-size="11" font-weight="700" fill="#A39EC4">P2</text>
+
+  <rect x="352" y="38" width="96" height="44" rx="16" fill="#261E6E" stroke="#ffffff" stroke-opacity="0.14" />
+  <text x="400" y="67" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">1:32</text>
+
+  <!-- petarung 1 -->
+  <ellipse cx="265" cy="384" rx="48" ry="9" fill="#000000" opacity="0.3" />
+  <rect x="246" y="330" width="16" height="48" rx="8" fill="#4839B8" />
+  <rect x="270" y="330" width="16" height="48" rx="8" fill="#4839B8" />
+  <rect x="236" y="282" width="60" height="56" rx="14" fill="#7366FF" />
+  <rect x="236" y="304" width="60" height="8" fill="#4839B8" opacity="0.6" />
+  <rect x="244" y="248" width="44" height="36" rx="10" fill="#7366FF" />
+  <rect x="258" y="260" width="24" height="10" rx="5" fill="#38B6FF" />
+  <circle cx="228" cy="306" r="12" fill="#C5E8B7" />
+  <path d="M322 288h16M326 300h14" stroke="#C5E8B7" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+  <circle cx="314" cy="298" r="14" fill="#C5E8B7" />
+
+  <!-- petarung 2 -->
+  <ellipse cx="535" cy="384" rx="48" ry="9" fill="#000000" opacity="0.3" />
+  <rect x="514" y="330" width="16" height="48" rx="8" fill="#4839B8" />
+  <rect x="538" y="330" width="16" height="48" rx="8" fill="#4839B8" />
+  <rect x="504" y="282" width="60" height="56" rx="14" fill="#4839B8" />
+  <rect x="504" y="304" width="60" height="8" fill="#2F2587" opacity="0.7" />
+  <rect x="512" y="248" width="44" height="36" rx="10" fill="#4839B8" />
+  <rect x="518" y="260" width="24" height="10" rx="5" fill="#C5E8B7" />
+  <circle cx="572" cy="306" r="12" fill="#38B6FF" />
+  <path d="M462 288h-16M460 300h-14" stroke="#38B6FF" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+  <circle cx="486" cy="298" r="14" fill="#38B6FF" />
+
+  <!-- sambaran benturan -->
+  <path d="M398 262C401 282 418 291 438 292 418 293 401 302 398 322 395 302 378 293 358 292 378 291 395 282 398 262Z" fill="#C5E8B7" opacity="0.95" />
+  <circle cx="398" cy="292" r="6" fill="#FFFFFF" opacity="0.9" />
+  <path d="M448 254l3.5 7-3.5 7-3.5-7Z" fill="#38B6FF" opacity="0.85" />
+  <path d="M346 316l3 6-3 6-3-6Z" fill="#C5E8B7" opacity="0.7" />
+
+  <!-- petunjuk kontrol -->
+  <rect x="310" y="436" width="36" height="30" rx="9" fill="#ffffff" opacity="0.08" stroke="#ffffff" stroke-opacity="0.14" />
+  <text x="328" y="456" text-anchor="middle" font-size="13" font-weight="600" fill="#A39EC4">A</text>
+  <rect x="352" y="436" width="36" height="30" rx="9" fill="#ffffff" opacity="0.08" stroke="#ffffff" stroke-opacity="0.14" />
+  <text x="370" y="456" text-anchor="middle" font-size="13" font-weight="600" fill="#A39EC4">D</text>
+  <rect x="412" y="436" width="36" height="30" rx="9" fill="#ffffff" opacity="0.08" stroke="#ffffff" stroke-opacity="0.14" />
+  <text x="430" y="456" text-anchor="middle" font-size="13" font-weight="600" fill="#A39EC4">←</text>
+  <rect x="454" y="436" width="36" height="30" rx="9" fill="#ffffff" opacity="0.08" stroke="#ffffff" stroke-opacity="0.14" />
+  <text x="472" y="456" text-anchor="middle" font-size="13" font-weight="600" fill="#A39EC4">→</text>
+</svg>

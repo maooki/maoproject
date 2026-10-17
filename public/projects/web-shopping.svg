@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="ws-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#18124C" />
+      <stop offset="1" stop-color="#0B0726" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#ws-bg)" />
+
+  <!-- stardust -->
+  <g fill="#ffffff">
+    <circle cx="70" cy="110" r="1.4" opacity="0.4" />
+    <circle cx="404" cy="86" r="1.2" opacity="0.3" />
+    <circle cx="756" cy="120" r="1.5" opacity="0.4" />
+    <circle cx="30" cy="330" r="1.2" opacity="0.3" />
+    <circle cx="774" cy="340" r="1.3" opacity="0.35" />
+  </g>
+
+  <!-- navbar toko -->
+  <rect x="24" y="24" width="752" height="56" rx="16" fill="#ffffff" opacity="0.06" stroke="#ffffff" stroke-opacity="0.12" />
+  <circle cx="56" cy="52" r="11" fill="#C5E8B7" />
+  <circle cx="56" cy="52" r="4" fill="#0B0726" />
+  <rect x="84" y="38" width="330" height="28" rx="14" fill="#ffffff" opacity="0.08" />
+  <circle cx="104" cy="52" r="6" fill="none" stroke="#A39EC4" stroke-width="2" />
+  <path d="M108 56l5 5" stroke="#A39EC4" stroke-width="2" stroke-linecap="round" />
+  <rect x="124" y="48" width="120" height="8" rx="4" fill="#A39EC4" opacity="0.5" />
+  <rect x="556" y="48" width="28" height="8" rx="4" fill="#ffffff" opacity="0.25" />
+  <rect x="596" y="48" width="28" height="8" rx="4" fill="#ffffff" opacity="0.25" />
+  <rect x="636" y="48" width="28" height="8" rx="4" fill="#ffffff" opacity="0.25" />
+  <path d="M695 46v-3.5a5.5 5.5 0 0 1 11 0V46" stroke="#C5E8B7" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <rect x="688" y="46" width="25" height="21" rx="6" fill="#C5E8B7" />
+  <circle cx="716" cy="42" r="8.5" fill="#38B6FF" />
+  <text x="716" y="46" text-anchor="middle" font-size="10" font-weight="700" fill="#0B0726">3</text>
+
+  <!-- kartu produk 1: headphone -->
+  <rect x="24" y="108" width="234" height="268" rx="18" fill="#ffffff" opacity="0.05" stroke="#ffffff" stroke-opacity="0.12" />
+  <rect x="36" y="120" width="210" height="132" rx="12" fill="#261E6E" />
+  <path d="M107 122a34 34 0 0 1 68 0" fill="none" stroke="#C5E8B7" stroke-width="7" stroke-linecap="round" />
+  <rect x="99" y="112" width="16" height="30" rx="8" fill="#C5E8B7" />
+  <rect x="167" y="112" width="16" height="30" rx="8" fill="#C5E8B7" />
+  <rect x="36" y="266" width="150" height="10" rx="5" fill="#A39EC4" opacity="0.55" />
+  <rect x="36" y="284" width="96" height="8" rx="4" fill="#A39EC4" opacity="0.35" />
+  <text x="36" y="318" font-size="12" fill="#A39EC4">★ 4.8</text>
+  <text x="36" y="344" font-size="18" font-weight="700" fill="#C5E8B7">$24</text>
+  <circle cx="234" cy="336" r="15" fill="#C5E8B7" />
+  <path d="M228 336h12M234 330v12" stroke="#0B0726" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- kartu produk 2: jam -->
+  <rect x="283" y="108" width="234" height="268" rx="18" fill="#ffffff" opacity="0.05" stroke="#ffffff" stroke-opacity="0.12" />
+  <rect x="295" y="120" width="210" height="132" rx="12" fill="#261E6E" />
+  <rect x="388" y="136" width="24" height="18" rx="6" fill="#4839B8" />
+  <rect x="388" y="218" width="24" height="18" rx="6" fill="#4839B8" />
+  <circle cx="400" cy="186" r="26" fill="#18124C" stroke="#38B6FF" stroke-width="6" />
+  <path d="M400 172v14l10 6" stroke="#38B6FF" stroke-width="3" stroke-linecap="round" fill="none" />
+  <rect x="295" y="266" width="150" height="10" rx="5" fill="#A39EC4" opacity="0.55" />
+  <rect x="295" y="284" width="96" height="8" rx="4" fill="#A39EC4" opacity="0.35" />
+  <text x="295" y="318" font-size="12" fill="#A39EC4">★ 4.6</text>
+  <text x="295" y="344" font-size="18" font-weight="700" fill="#C5E8B7">$59</text>
+  <circle cx="493" cy="336" r="15" fill="#C5E8B7" />
+  <path d="M487 336h12M493 330v12" stroke="#0B0726" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- kartu produk 3: speaker -->
+  <rect x="542" y="108" width="234" height="268" rx="18" fill="#ffffff" opacity="0.05" stroke="#ffffff" stroke-opacity="0.12" />
+  <rect x="554" y="120" width="210" height="132" rx="12" fill="#261E6E" />
+  <rect x="639" y="140" width="40" height="92" rx="14" fill="#7366FF" />
+  <circle cx="659" cy="162" r="8" fill="#0B0726" opacity="0.5" />
+  <circle cx="659" cy="198" r="12" fill="none" stroke="#C5E8B7" stroke-width="3" />
+  <rect x="554" y="266" width="150" height="10" rx="5" fill="#A39EC4" opacity="0.55" />
+  <rect x="554" y="284" width="96" height="8" rx="4" fill="#A39EC4" opacity="0.35" />
+  <text x="554" y="318" font-size="12" fill="#A39EC4">★ 4.7</text>
+  <text x="554" y="344" font-size="18" font-weight="700" fill="#C5E8B7">$18</text>
+  <circle cx="752" cy="336" r="15" fill="#C5E8B7" />
+  <path d="M746 336h12M752 330v12" stroke="#0B0726" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- bilah keranjang & checkout -->
+  <rect x="24" y="396" width="752" height="76" rx="20" fill="#ffffff" opacity="0.06" stroke="#ffffff" stroke-opacity="0.12" />
+  <rect x="56" y="422" width="26" height="24" rx="7" fill="#261E6E" stroke="#A39EC4" stroke-width="2" />
+  <path d="M62 422v-3a8 8 0 0 1 14 0v3" stroke="#A39EC4" stroke-width="2" fill="none" />
+  <circle cx="118" cy="434" r="14" fill="#4839B8" stroke="#0B0726" stroke-width="3" />
+  <circle cx="142" cy="434" r="14" fill="#7366FF" stroke="#0B0726" stroke-width="3" />
+  <circle cx="166" cy="434" r="14" fill="#38B6FF" stroke="#0B0726" stroke-width="3" />
+  <rect x="196" y="420" width="90" height="9" rx="4.5" fill="#A39EC4" opacity="0.5" />
+  <rect x="196" y="438" width="60" height="7" rx="3.5" fill="#A39EC4" opacity="0.3" />
+  <text x="420" y="445" font-size="20" font-weight="700" fill="#FFFFFF">$101.00</text>
+  <rect x="600" y="412" width="152" height="44" rx="22" fill="#C5E8B7" />
+  <text x="676" y="440" text-anchor="middle" font-size="15" font-weight="700" fill="#0B0726">Checkout</text>
+</svg>

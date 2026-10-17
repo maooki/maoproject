@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="wc-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A1B5C" />
+      <stop offset="1" stop-color="#0B0726" />
+    </linearGradient>
+    <radialGradient id="wc-sun-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#C5E8B7" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#C5E8B7" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#wc-bg)" />
+
+  <!-- stardust -->
+  <g fill="#ffffff">
+    <circle cx="90" cy="70" r="1.5" opacity="0.5" />
+    <circle cx="210" cy="120" r="1.2" opacity="0.35" />
+    <circle cx="420" cy="60" r="1.8" opacity="0.45" />
+    <circle cx="540" cy="240" r="1.2" opacity="0.3" />
+    <circle cx="740" cy="330" r="1.6" opacity="0.4" />
+    <circle cx="140" cy="470" r="1.3" opacity="0.3" />
+    <circle cx="480" cy="470" r="1.5" opacity="0.35" />
+  </g>
+  <path d="M330 96l2.6 5.4-2.6 5.4-2.6-5.4Z" fill="#C5E8B7" opacity="0.7" />
+  <path d="M690 210l2.2 4.6-2.2 4.6-2.2-4.6Z" fill="#38B6FF" opacity="0.7" />
+
+  <!-- matahari -->
+  <circle cx="650" cy="110" r="84" fill="url(#wc-sun-glow)" />
+  <circle cx="650" cy="110" r="52" fill="#C5E8B7" />
+  <circle cx="636" cy="98" r="16" fill="#FFFFFF" opacity="0.35" />
+
+  <!-- awan -->
+  <g fill="#FFFFFF" opacity="0.95">
+    <circle cx="560" cy="140" r="26" />
+    <circle cx="598" cy="126" r="34" />
+    <circle cx="638" cy="142" r="24" />
+    <rect x="536" y="140" width="128" height="26" rx="13" />
+  </g>
+
+  <!-- bilah pencarian -->
+  <rect x="40" y="176" width="380" height="54" rx="17" fill="#ffffff" opacity="0.07" stroke="#ffffff" stroke-opacity="0.12" />
+  <path d="M70 190c-6.6 0-12 5.4-12 12 0 8.8 12 19.5 12 19.5s12-10.7 12-19.5c0-6.6-5.4-12-12-12Z" fill="#C5E8B7" />
+  <circle cx="70" cy="202" r="4.4" fill="#0B0726" />
+  <text x="98" y="209" font-size="17" font-weight="600" fill="#FFFFFF">Jakarta</text>
+
+  <!-- kartu suhu -->
+  <rect x="40" y="254" width="380" height="206" rx="22" fill="#ffffff" opacity="0.06" stroke="#ffffff" stroke-opacity="0.12" />
+  <circle cx="66" cy="284" r="7" fill="none" stroke="#A39EC4" stroke-width="2" />
+  <path d="M66 280v4l3 2" stroke="#A39EC4" stroke-width="2" stroke-linecap="round" fill="none" />
+  <text x="84" y="289" font-size="12" font-weight="600" fill="#A39EC4">10:24</text>
+
+  <text x="72" y="372" font-size="72" font-weight="600" fill="#FFFFFF">28°</text>
+
+  <circle cx="278" cy="316" r="15" fill="#C5E8B7" />
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="262" cy="338" r="10" />
+    <circle cx="280" cy="332" r="13" />
+    <circle cx="298" cy="340" r="9" />
+    <rect x="252" y="338" width="56" height="10" rx="5" />
+  </g>
+
+  <!-- chip statistik -->
+  <rect x="64" y="398" width="104" height="44" rx="14" fill="#ffffff" opacity="0.07" />
+  <path d="M90 408c4 5.4 6.6 8.6 6.6 11.6a6.6 6.6 0 0 1-13.2 0c0-3 2.6-6.2 6.6-11.6Z" fill="#38B6FF" />
+  <text x="106" y="426" font-size="14" font-weight="600" fill="#FFFFFF">78%</text>
+
+  <rect x="176" y="398" width="104" height="44" rx="14" fill="#ffffff" opacity="0.07" />
+  <g stroke="#A39EC4" stroke-width="2.4" stroke-linecap="round">
+    <path d="M192 414h14" />
+    <path d="M192 421h18" />
+    <path d="M192 428h10" />
+  </g>
+  <text x="220" y="426" font-size="13" font-weight="600" fill="#FFFFFF">12 km/h</text>
+
+  <rect x="288" y="398" width="104" height="44" rx="14" fill="#ffffff" opacity="0.07" />
+  <circle cx="308" cy="420" r="7" fill="none" stroke="#C5E8B7" stroke-width="2.4" />
+  <path d="M308 409v3M308 428v3M297 420h3M316 420h3" stroke="#C5E8B7" stroke-width="2.4" stroke-linecap="round" />
+  <text x="326" y="426" font-size="14" font-weight="600" fill="#FFFFFF">4 UV</text>
+
+  <!-- panel prakiraan -->
+  <rect x="440" y="176" width="320" height="284" rx="22" fill="#ffffff" opacity="0.05" stroke="#ffffff" stroke-opacity="0.12" />
+
+  <circle cx="478" cy="222" r="16" fill="#261E6E" stroke="#ffffff" stroke-opacity="0.14" />
+  <circle cx="478" cy="222" r="7" fill="#C5E8B7" />
+  <rect x="512" y="217" width="150" height="10" rx="5" fill="#ffffff" opacity="0.08" />
+  <rect x="518" y="217" width="106" height="10" rx="5" fill="#7366FF" />
+  <text x="736" y="227" text-anchor="end" font-size="13" font-weight="600" fill="#FFFFFF">31° / 24°</text>
+
+  <circle cx="478" cy="282" r="16" fill="#261E6E" stroke="#ffffff" stroke-opacity="0.14" />
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="470" cy="286" r="7" />
+    <circle cx="482" cy="282" r="9" />
+    <rect x="464" y="286" width="30" height="8" rx="4" />
+  </g>
+  <rect x="512" y="277" width="150" height="10" rx="5" fill="#ffffff" opacity="0.08" />
+  <rect x="532" y="277" width="88" height="10" rx="5" fill="#38B6FF" opacity="0.9" />
+  <text x="736" y="287" text-anchor="end" font-size="13" font-weight="600" fill="#FFFFFF">29° / 23°</text>
+
+  <circle cx="478" cy="342" r="16" fill="#261E6E" stroke="#ffffff" stroke-opacity="0.14" />
+  <g stroke="#38B6FF" stroke-width="2.4" stroke-linecap="round">
+    <path d="M472 336l-2 4" />
+    <path d="M479 334l-2 4" />
+    <path d="M486 336l-2 4" />
+  </g>
+  <path d="M468 346c4-3 8-3 12 0s8 3 12 0" stroke="#38B6FF" stroke-width="2.4" stroke-linecap="round" fill="none" />
+  <rect x="512" y="337" width="150" height="10" rx="5" fill="#ffffff" opacity="0.08" />
+  <rect x="540" y="337" width="70" height="10" rx="5" fill="#38B6FF" opacity="0.7" />
+  <text x="736" y="347" text-anchor="end" font-size="13" font-weight="600" fill="#FFFFFF">27° / 22°</text>
+
+  <circle cx="478" cy="402" r="16" fill="#261E6E" stroke="#ffffff" stroke-opacity="0.14" />
+  <circle cx="474" cy="398" r="6" fill="#C5E8B7" />
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="482" cy="406" r="5" />
+    <circle cx="471" cy="409" r="4" />
+    <rect x="466" y="406" width="22" height="6" rx="3" />
+  </g>
+  <rect x="512" y="397" width="150" height="10" rx="5" fill="#ffffff" opacity="0.08" />
+  <rect x="528" y="397" width="92" height="10" rx="5" fill="#C5E8B7" opacity="0.85" />
+  <text x="736" y="407" text-anchor="end" font-size="13" font-weight="600" fill="#FFFFFF">30° / 24°</text>
+</svg>

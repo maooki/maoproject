@@ -1,0 +1,293 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/*  Varian kustom: tema terang ("siang")                               */
+/*  Gaya default adalah tema gelap BeanMachine (deep space). Atribut   */
+/*  data-theme diset oleh inline script di root layout sebelum paint.  */
+/* ------------------------------------------------------------------ */
+@custom-variant day (&:where([data-theme="light"], [data-theme="light"] *));
+
+/* ------------------------------------------------------------------ */
+/*  Design tokens — BeanMachine Space Station                          */
+/*  Tema gelap (default) = stasiun antariksa; terang = langit siang.   */
+/* ------------------------------------------------------------------ */
+:root {
+  color-scheme: dark;
+
+  /* Langit & latar halaman */
+  --sky-top: #0b0726;
+  --sky-mid: #18124c;
+  --sky-bottom: #110a3a;
+
+  /* Permukaan kaca (navbar, kartu, tombol) */
+  --surface: color-mix(in oklab, #ffffff 6%, transparent);
+  --surface-strong: color-mix(in oklab, #ffffff 11%, transparent);
+  --line: color-mix(in oklab, #ffffff 14%, transparent);
+  --line-strong: color-mix(in oklab, #ffffff 28%, transparent);
+
+  /* Teks */
+  --ink: #ffffff;
+  --ink-soft: #a39ec4;
+
+  /* Aksen merek */
+  --mint: #c5e8b7;
+  --mint-hover: #d9f2cf;
+  --mint-ink: #0b0726;
+  --peri: #7366ff;
+  --cyan: #38b6ff;
+  --iconbox: #4839b8;
+  --iconbox-glow: color-mix(in oklab, #4839b8 60%, transparent);
+  --focus: #c5e8b7;
+  --danger: #ffa8a8;
+
+  /* Palet ilustrasi luar angkasa */
+  --art-planet: #221a63;
+  --art-planet-mid: #2f2587;
+  --art-planet-light: #4a3cc4;
+  --art-ring: #38b6ff;
+  --art-mountain: #322686;
+  --art-mountain-dark: #241a6b;
+  --art-mountain-top: #8f84ff;
+  --art-ground: #1d1559;
+  --art-vehicle: #ded9ff;
+  --art-vehicle-alt: #7c6ff7;
+  --art-station: #6f63f6;
+  --art-window: #38b6ff;
+  --art-star: #ffffff;
+  --art-star-soft: color-mix(in oklab, #ffffff 45%, transparent);
+
+  /* Bayangan & pendaran */
+  --shadow: color-mix(in oklab, #000000 55%, transparent);
+  --glow-mint: 0 0 22px color-mix(in oklab, #c5e8b7 40%, transparent);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+
+  --sky-top: #e9e5ff;
+  --sky-mid: #f5f3ff;
+  --sky-bottom: #eeebff;
+
+  --surface: color-mix(in oklab, #ffffff 66%, transparent);
+  --surface-strong: color-mix(in oklab, #ffffff 90%, transparent);
+  --line: color-mix(in oklab, #17124b 13%, transparent);
+  --line-strong: color-mix(in oklab, #17124b 26%, transparent);
+
+  --ink: #17124b;
+  --ink-soft: #57508a;
+
+  --mint: #a9dc93;
+  --mint-hover: #bde9aa;
+  --mint-ink: #0b0726;
+  --peri: #5b4bff;
+  --cyan: #1e9aef;
+  --iconbox: #5a4bd1;
+  --iconbox-glow: color-mix(in oklab, #5a4bd1 35%, transparent);
+  --focus: #1e9aef;
+  --danger: #b83232;
+
+  --art-planet: #cdc6ff;
+  --art-planet-mid: #c0b6ff;
+  --art-planet-light: #9d90fb;
+  --art-ring: #1e9aef;
+  --art-mountain: #b7adff;
+  --art-mountain-dark: #9e93f8;
+  --art-mountain-top: #ffffff;
+  --art-ground: #d8d2ff;
+  --art-vehicle: #4b40a8;
+  --art-vehicle-alt: #6f63f6;
+  --art-station: #897df8;
+  --art-window: #1e9aef;
+  --art-star: #7b72c0;
+  --art-star-soft: color-mix(in oklab, #7b72c0 40%, transparent);
+
+  --shadow: color-mix(in oklab, #17124b 18%, transparent);
+  --glow-mint: 0 0 20px color-mix(in oklab, #7fc46a 35%, transparent);
+}
+
+/* Toko warna Tailwind — "inline" agar utility memakai var() runtime,
+   sehingga pergantian [data-theme] langsung mengubah seluruh halaman. */
+@theme inline {
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+
+  --color-sky-top: var(--sky-top);
+  --color-sky-mid: var(--sky-mid);
+  --color-sky-bottom: var(--sky-bottom);
+
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+
+  --color-mint: var(--mint);
+  --color-mint-hover: var(--mint-hover);
+  --color-mint-ink: var(--mint-ink);
+  --color-peri: var(--peri);
+  --color-cyan: var(--cyan);
+  --color-iconbox: var(--iconbox);
+  --color-danger: var(--danger);
+}
+
+@theme {
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-float-slow: float 11s ease-in-out infinite;
+  --animate-drift: drift 30s ease-in-out infinite alternate;
+  --animate-twinkle: twinkle 3.8s ease-in-out infinite;
+  --animate-planet: planet 12s ease-in-out infinite;
+  --animate-ring-spin: ring-spin 2.4s linear infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes drift {
+    from {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    to {
+      transform: translate3d(3%, -3%, 0) scale(1.12);
+    }
+  }
+
+  /* Bintang: berkedip sambil membesar-mengecil — kesan kilau. */
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 0.2;
+      transform: scale(0.7);
+    }
+    50% {
+      opacity: 0.95;
+      transform: scale(1.3);
+    }
+  }
+
+  /* Planet hero: mengembara pelan sambil bergoyang halus */
+  @keyframes planet {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) rotate(-1.2deg);
+    }
+    50% {
+      transform: translate3d(22px, -18px, 0) rotate(1.4deg);
+    }
+  }
+
+  /* Cincin planet: titik-titik mengelilingi planet.
+     -60 = kelipatan periode dash (desktop 9+21, mobile 6+14) → loop mulus. */
+  @keyframes ring-spin {
+    to {
+      stroke-dashoffset: -60;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Base                                                               */
+/* ------------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+  /* offset anchor agar navbar melayang tidak menutupi judul section */
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background-color: var(--sky-mid);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--mint);
+  color: var(--mint-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Utility kustom                                                     */
+/* ------------------------------------------------------------------ */
+/* Permukaan kaca untuk navbar & kartu */
+@utility glass {
+  background-color: var(--surface);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--line);
+}
+
+@utility glass-strong {
+  background-color: var(--surface-strong);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--line);
+}
+
+@utility card-shadow {
+  box-shadow: 0 20px 55px -22px var(--shadow);
+}
+
+/* Titik asal tetap untuk animasi transform (float, kilau, putar) pada elemen SVG */
+@utility svg-float {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Layar kecil: animasi diringankan agar HP tetap mulus               */
+/* ------------------------------------------------------------------ */
+/* Kelap-kelip versi ringan (hanya opacity, tanpa transform/scale). */
+@keyframes twinkle-soft {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Kilau memakai versi ringan; sebagian bintang (utility `star-calm`)
+     dibiarkan diam supaya CPU HP tidak mengurus ratusan animasi. */
+  .animate-twinkle {
+    animation-name: twinkle-soft;
+  }
+
+  .star-calm {
+    animation: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Reduced motion                                                     */
+/* ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
